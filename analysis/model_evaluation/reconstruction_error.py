@@ -46,7 +46,7 @@ def reconstruction_error(X, W, H):
     return (np.linalg.norm(X - W.dot(H.T), ord='fro') ** 2) / X.shape[1]
     
 if __name__== "__main__":
-    orig_data = pd.read_csv("../../data/exp_data_ccobra.csv")
+    orig_data = pd.read_csv("../../data/extracted.csv")
     for property in ["conscientiousness", "openness"]:
         template_loading_string = "../../matrices/fit_result_{}_"
         

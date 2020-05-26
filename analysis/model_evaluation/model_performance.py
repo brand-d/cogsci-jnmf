@@ -116,7 +116,7 @@ if __name__== "__main__":
         print("property: {}".format(property))
     
         # load syllogistic dataset
-        data_df = pd.read_csv("../../data/exp_data_ccobra.csv")
+        data_df = pd.read_csv("../../data/extracted.csv")
         high_df, low_df = load_dataset(data_df, property)
 
         # load matrices
